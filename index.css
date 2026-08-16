@@ -1,0 +1,81 @@
+/* Configuración General */
+body {
+    background-color: #050505;
+    color: #ffea00; /* Amarillo Neón */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Caja Terminal */
+.terminal-container {
+    background-color: #0d0d0d;
+    border: 2px solid #ffea00;
+    box-shadow: 0 0 15px rgba(255, 234, 0, 0.4);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+.terminal-header {
+    background-color: #ffea00;
+    color: #000;
+    padding: 8px 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-online {
+    color: #008000;
+}
+
+/* Cuerpo */
+.terminal-body {
+    padding: 20px;
+}
+
+/* Botones de menú */
+.folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 1px solid #ffea00;
+    color: #ffea00;
+    padding: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ffea00;
+    color: #000;
+    box-shadow: 0 0 10px #ffea00;
+}
+
+/* Pestañas de contenido */
+.tab-content {
+    display: none;
+    border-top: 1px dashed #333;
+    padding-top: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Texto corrupto / Estilos especiales */
+.corrupt-text {
+    color: #ff3333;
+    font-style: italic;
+}

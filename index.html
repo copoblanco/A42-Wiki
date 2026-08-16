@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A42 // TERMINAL CLASIFICADA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span>SYSTEM CONSOLE v2.0 - ARCHIVO CLASIFICADO</span>
+            <span class="status-online">● CONECTADO</span>
+        </div>
+        
+        <div class="terminal-body">
+            <p class="system-msg">[SYSTEM] BIENVENIDO AGENTE. SELECCIONE UN ARCHIVO PARA CONTINUAR:</p>
+            
+            <!-- Navegación de carpetas -->
+            <div class="folder-grid">
+                <button class="nav-btn" onclick="openTab('anomalys')">/1/ ANOMALYS</button>
+                <button class="nav-btn" onclick="openTab('agentes')">/2/ AGENTES</button>
+                <button class="nav-btn" onclick="openTab('bitacoras')">/3/ BITÁCORAS</button>
+                <button class="nav-btn" onclick="openTab('rt')">/4/ R.T</button>
+            </div>
+
+            <!-- Contenido de las secciones -->
+            <div id="anomalys" class="tab-content active">
+                <h2>[REGISTRO ANOMALY INFECTIOUS // ARBOR CARNIS]</h2>
+                <p>Aquí pegas el lore de las anomalías que ya tenemos listo...</p>
+            </div>
+
+            <div id="agentes" class="tab-content">
+                <h2>[ARCHIVOS DE PERSONAL Y AGENTES]</h2>
+                <p>Espacio reservado para los expedientes de Kite, A.S.M, J.Z, etc.</p>
+            </div>
+
+            <div id="bitacoras" class="tab-content">
+                <h2>[TRANSMISIONES Y DIARIOS RECUPERADOS]</h2>
+                <p>Aquí van las entradas que vas a reescribir con calma.</p>
+            </div>
+
+            <div id="rt" class="tab-content">
+                <h2>[EXPEDIENTE R.T PS DATA]</h2>
+                <p class="corrupt-text">Fuge priusquam te capiant...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
